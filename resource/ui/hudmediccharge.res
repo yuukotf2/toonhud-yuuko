@@ -42,20 +42,48 @@
 		"font"			"G_FontAmmo"
 		"fgcolor"		"G_AmmoClipValue"
 	}
-
+	"ChargeLabelShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"ChargeLabelShadow"
+		"xpos"			"152"
+		"xpos_minmode"	"142"
+		"ypos"			"150"
+		"ypos_minmode"	"50"
+		"zpos"			"1"
+		"wide"			"130"
+		"tall"			"50"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"disabledfgcolor2_override" "Orange"
+		"paintbackground"	"1"
+		"bgcolor_override"	"255 0 0 0"
+		"paintbackgroundtype"	"2"
+		"tabPosition"	"0"
+		"labelText"		"#TF_UberchargeMinHUD"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"textinsety"	"1"
+		"font"			"G_FontAmmo"
+		"fgcolor"		"G_Shadow"
+		"associate"		"ChargeLabel"
+	}
 	
 	"IndividualChargesLabel"
 	{
-		"ControlName"	"CExLabel"
+		"ControlName"	"CExImageButton"
 		"fieldName"		"IndividualChargesLabel"
 		"labelText"		"#TF_IndividualUberchargesMinHUD"
-		"xpos"			"150"
-		"xpos_minmode"	"140"
-		"ypos"			"148"
-		"ypos_minmode"	"48"
-		"zpos"			"2"
-		"wide"			"100"
-		"tall"			"50"
+		"xpos"			"110"
+		"xpos_minmode"	"100"
+		"ypos"			"132"
+		"ypos_minmode"	"32"
+		"zpos"			"3"
+		"wide"			"180"
+		"tall"			"82"
 		"autoResize"	"1"
 		"pinCorner"		"2"
 		"visible"		"1"
@@ -64,9 +92,26 @@
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
-		"font"			"G_FontAmmo"
+		"font"			"G_FontHealth"
 		"textinsety"	"1"
-		"fgcolor"		"G_AmmoClipValue"
+		"defaultFgColor_override" "242 226 192 255"
+		"paintbackground" "0"
+		"paintborder"	"1"
+		"border_default"		"RefractShield"
+		"SubImage"
+		{
+			"ControlName" "ImagePanel"
+			"fieldName" "SubImage"
+			"xpos" "0"
+			"ypos" "0"
+			"zpos" "0"
+			"wide" "180"
+			"tall" "85"
+			"visible" "1"
+			"enabled" "1"
+			"image" "replay/thumbnails/yuuko/shieldadditivescronch"
+			"scaleImage" "1"
+		}
 	}
 	
 	"UberchargeReady"
@@ -86,7 +131,29 @@
 		"fgcolor_override"	"G_White"
 		"font"				"G_HeadsIcon"
 	}
-	
+
+	// unfortunately we cannot really have overlays per meter the same way
+	// we can achieve backing via borders, but the vaccinator still turns
+	// out okay this way i think, we have to try and be good-looking and
+	// legible within our constraints.
+	"ChargeMeterMultiplyPanel"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"ChargeMeterMultiplyPanel"
+		"xpos"					"0"
+		"ypos"					"137"
+		"ypos_minmode"			"77"
+		"zpos"					"6"
+		"wide"					"120"
+		"tall"					"6"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"replay/thumbnails/yuuko/modulate"
+		"scaleImage"			"1"
+	}
+
 	"ChargeMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
@@ -96,7 +163,7 @@
 		"xpos_minmode"			"0"
 		"ypos"					"137"
 		"ypos_minmode"			"77"
-		"zpos"					"2"
+		"zpos"					"5"
 		"wide"					"120"
 		"tall"					"6"	
 		"autoResize"			"0"
@@ -106,9 +173,12 @@
 		"textAlignment"			"Left"
 		"dulltext"				"0"
 		"brighttext"			"0"
+		// the joke is we aren't actually overriding foreground,
+		// we leave all the colour tweaking to our modulate overlay
+		"fgcolor_override"		"G_White"
 		"bgcolor_override"		"G_ItemMeterBg"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 
 	"ChargeMeter1"
@@ -116,11 +186,11 @@
 		"ControlName"	"ContinuousProgressBar"
 		"fieldName"		"ChargeMeter1"
 		"font"			"Default"
-		"xpos"			"1"
+		"xpos"			"0"
 		"ypos"			"137"
 		"ypos_minmode"	"77"
-		"zpos"			"2"
-		"wide"			"29"
+		"zpos"			"5"
+		"wide"			"30"
 		"tall"			"6"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -133,7 +203,7 @@
 		"paintbackground"		"1"
 		"bgcolor_override"		"G_ItemMeterBg"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 
 	"ChargeMeter2"
@@ -144,7 +214,7 @@
 		"xpos"			"31"
 		"ypos"					"137"
 		"ypos_minmode"			"77"
-		"zpos"			"2"
+		"zpos"			"5"
 		"wide"			"29"
 		"tall"			"6"
 		"autoResize"	"0"
@@ -158,7 +228,7 @@
 		"paintbackground"		"1"
 		"bgcolor_override"		"G_ItemMeterBg"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 
 	"ChargeMeter3"
@@ -169,7 +239,7 @@
 		"xpos"			"61"
 		"ypos"					"137"
 		"ypos_minmode"			"77"
-		"zpos"			"2"
+		"zpos"			"5"
 		"wide"			"29"
 		"tall"			"6"
 		"autoResize"	"0"
@@ -183,7 +253,7 @@
 		"paintbackground"		"1"
 		"bgcolor_override"		"G_ItemMeterBg"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 
 	"ChargeMeter4"
@@ -194,8 +264,8 @@
 		"xpos"			"91"
 		"ypos"			"137"
 		"ypos_minmode"	"77"
-		"zpos"			"2"
-		"wide"			"29"
+		"zpos"			"5"
+		"wide"			"30"
 		"tall"			"6"
 		"autoResize"	"0"
 		"pinCorner"		"0"
@@ -208,7 +278,7 @@
 		"paintbackground"		"1"
 		"bgcolor_override"		"G_ItemMeterBg"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 	
 	"HealthClusterIcon"

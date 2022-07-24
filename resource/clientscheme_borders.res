@@ -26,6 +26,20 @@ Scheme
 			"draw_corner_height" "4"
 			"draw_corner_width" "8"
 		}
+		// we have to use scalable_image here and simply make each corner a
+		// quarter slice of the texture because otherwise for some reason it
+		// will draw the border on top of the element's contents.
+		// the result still behaves like stretching the image over 180x86
+		RefractShield
+		{
+			"bordertype"	"scalable_image"
+			"backgroundtype"	"2"
+			"image"			"replay/thumbnails/yuuko/refracts/shieldrefractscronch"
+			"src_corner_height" "256"
+			"src_corner_width" "512"
+			"draw_corner_height" "43"
+			"draw_corner_width" "90"
+		}
 
 		G_HealthBorder
 		{

@@ -1,0 +1,15 @@
+"Refract"
+{
+	"%keywords" "tf"
+	"$refractamount" "0.00"
+	"$refracttinttexture" "vgui/replay/thumbnails/yuuko/refracts/shieldrefracttintscronch"
+	"$refracttint" "{188 188 188}"
+	"$refractblur" "0.0"
+	"$scale" "[1 1]"
+	"$normalmap" "vgui/replay/thumbnails/yuuko/refracts/shieldrefractnormalscronch"
+	
+	<dx90
+	{
+		 	"$fallbackmaterial" "vgui/replay/thumbnails/yuuko/refracts/fallback"
+	}
+}
