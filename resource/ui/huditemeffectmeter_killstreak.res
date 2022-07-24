@@ -122,7 +122,7 @@
 		"fgcolor"				"G_Shadow"
 	}
 
-	"StreakIcon"
+	"StreakIconArrow"
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"StreakIcon"
@@ -135,10 +135,29 @@
 		"tall"					"25"
 		"visible"				"1"
 		"enabled"				"1"
-		"labelText"				"K"
+		"labelText"				"k"
 		"textAlignment"			"west"
 		"font"					"G_HeadsIcon"
 		"fgcolor_override"		"G_KillstreakIcon"
+	}
+
+	"StreakIconNub"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"StreakIcon"
+		"xpos"					"c+264"
+		"xpos_minmode"			"c+244"
+		"ypos"					"r57"
+		"ypos_minmode"			"c+83"
+		"zpos"					"2"
+		"wide"					"16"
+		"tall"					"25"
+		"visible"				"1"
+		"enabled"				"1"
+		"labelText"				"l"
+		"textAlignment"			"west"
+		"font"					"G_HeadsIcon"
+		"fgcolor_override"		"206 108 8 255"
 	}
 
 	"StreakIconShadow"
