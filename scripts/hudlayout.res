@@ -1,5 +1,20 @@
 "Resource/HudLayout.res"
 {
+	HardcodedCrosshair		//1.14
+	{
+		"controlName"		"ImagePanel"
+		"fieldName"			"HardcodedCrosshair"
+		"visible"			"1"
+		"visible_minmode"	"1"
+		"enabled"			"1"
+		"zpos"				"2"
+		"xpos" "cs-0.5"
+		"ypos" "cs-0.5"
+		"wide"				"57"
+		"tall"				"57"
+		"image"				"replay/thumbnails/yuuko/xhair"
+		"scaleImage"		"1"
+	}
 	"Transparent"
 	{
 		"ControlName"	"ImagePanel"
