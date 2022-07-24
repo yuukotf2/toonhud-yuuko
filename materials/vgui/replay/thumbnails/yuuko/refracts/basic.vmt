@@ -1,0 +1,15 @@
+"Refract"
+{
+	"%keywords" "tf"
+	"$refractamount" "0.000"
+	"$refracttint" "{255 255 255}"
+	
+	"$refractblur" "0.0"
+
+	"$scale" "[1 1]"
+	"$normalmap" "vgui/replay/thumbnails/yuuko/refracts/basic"
+	<dx90
+	{
+		 	"$fallbackmaterial" "vgui/replay/thumbnails/yuuko/refracts/fallback"
+	}
+}

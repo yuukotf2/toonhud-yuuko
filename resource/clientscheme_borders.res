@@ -4,7 +4,29 @@ Scheme
 
 	Borders
 	{
-	
+		// instead of drawing an imagepanel behind meters we assign them
+		// a border
+		MeterRefractDarken
+		{
+			"bordertype"	"scalable_image"
+			"backgroundtype"	"2"
+			"image"		"replay/thumbnails/yuuko/refracts/basic_darken"
+			"src_corner_height" "8"
+			"src_corner_width" "8"
+			"draw_corner_width" "4"
+			"draw_corner_width" "4"
+		}
+		SideGradient8
+		{
+			"bordertype"	"scalable_image"
+			"backgroundtype"	"2"
+			"image"	"replay/thumbnails/yuuko/sidegradient"
+			"src_corner_height" "12"
+			"src_corner_width"	"32"
+			"draw_corner_height" "4"
+			"draw_corner_width" "8"
+		}
+
 		G_HealthBorder
 		{
 			"inset" "0 0 0 0"

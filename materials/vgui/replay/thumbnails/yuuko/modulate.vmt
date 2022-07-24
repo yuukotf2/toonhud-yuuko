@@ -1,0 +1,5 @@
+// the texture is just a solid image of the same colour as our text
+"Modulate"
+{
+	"$basetexture" "vgui/replay/thumbnails/yuuko/modulate"
+}
