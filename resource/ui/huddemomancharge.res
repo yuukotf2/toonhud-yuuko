@@ -1,5 +1,23 @@
 "Resource/UI/HudDemomanCharge.res"
 {
+	"ChargeMeterMultiplyPanel"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"ChargeMeterMultiplyPanel"
+		"xpos"					"c-60"
+		"ypos"					"r102"
+		"ypos_minmode"			"c+79"
+		"zpos"					"3"
+		"wide"					"120"
+		"tall"					"6"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"replay/thumbnails/yuuko/modulate"
+		"scaleImage"			"1"
+	}
+
 	"ChargeMeter"
 	{
 		"ControlName"			"ContinuousProgressBar"
@@ -20,6 +38,6 @@
 		"bgcolor_override"		"G_ItemMeterBg"
 		"fgcolor_override"		"White"
 		"paintborder"			"1"
-		"border"				"G_MeterBorder"
+		"border"				"MeterRefractDarken"
 	}
 }
