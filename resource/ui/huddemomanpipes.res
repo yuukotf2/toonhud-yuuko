@@ -40,7 +40,22 @@
 		"fgcolor_override"		"155 155 155 255"
 		"textinsety"			"-1"
 	}
-
+	"ChargeMeterMultiplyPanel"
+	{
+		"ControlName"			"ImagePanel"
+		"fieldName"				"ChargeMeterMultiplyPanel"
+		"xpos"					"c-15"
+		"ypos"					"c+15"
+		"zpos"					"3"
+		"wide"					"30"
+		"tall"					"4"
+		"autoResize"			"1"
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"image"					"replay/thumbnails/yuuko/modulate"
+		"scaleImage"			"1"
+	}
 	"ChargeMeter"
 	{	
 		"ControlName"			"ContinuousProgressBar"
@@ -63,9 +78,9 @@
 		"dulltext"				"0"
 		"brighttext"			"0"
 		"paintborder"			"1"
-		"border"				"G_ChargeBorder"	// 9 CDCM
+		"border"				"MeterRefractDarken"	// 9 CDCM
 		"paintbackground"		"0"	// 10 CDCM
-		"bgcolor_override"		"G_ItemMeterBg"
+		"bgcolor_override"		"0 0 0 128"
 	}
 		
 	"PipesPresentPanel"
